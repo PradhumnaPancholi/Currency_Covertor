@@ -14,6 +14,7 @@
 		9F79382C22DFACF700090814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F79382A22DFACF700090814 /* LaunchScreen.storyboard */; };
 		9F79383722DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79383622DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterTests.swift */; };
 		9F79384222DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79384122DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterUITests.swift */; };
+		9F79385022DFB54300090814 /* CurrencyCoverversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79384F22DFB54300090814 /* CurrencyCoverversionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9F79383D22DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pradhumna_Pancholi_Currency_ConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F79384122DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pradhumna_Pancholi_Currency_ConverterUITests.swift; sourceTree = "<group>"; };
 		9F79384322DFACF800090814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F79384F22DFB54300090814 /* CurrencyCoverversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCoverversionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				9F79382822DFACF700090814 /* Assets.xcassets */,
 				9F79382A22DFACF700090814 /* LaunchScreen.storyboard */,
 				9F79382D22DFACF700090814 /* Info.plist */,
+				9F79384F22DFB54300090814 /* CurrencyCoverversionModel.swift */,
 			);
 			path = Pradhumna_Pancholi_Currency_Converter;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				9F79382422DFACF600090814 /* ViewController.swift in Sources */,
 				9F79382222DFACF600090814 /* AppDelegate.swift in Sources */,
+				9F79385022DFB54300090814 /* CurrencyCoverversionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
