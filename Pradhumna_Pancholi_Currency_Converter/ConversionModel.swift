@@ -8,6 +8,10 @@
 
 import Foundation
 
-class CurrencyCoversionModel {
-    var currencies = ["USD", "CAD", "INR", "GBP", "TRY"]
+class ConversionModel {
+    var fromCurrency : String?
+    var tocurrency: String?
+    var exChangeRate: Double?
+    
+    var currencies = ["USD", "CAD", "INR", "GBP", "TRY"].sorted()
 }

@@ -21,13 +21,12 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         super.viewDidLoad()
         currencyPicker.dataSource = self
         currencyPicker.delegate = self
-        // Do any additional setup after loading the view.
     }
 
     //variables//
-    var currencyModel = CurrencyCoversionModel()
-    var fromIndex = 0
-    var toIndex = 0
+    var currencyModel = ConversionModel()
+    var fromIndex = ""
+    var toIndex = ""
     var BASE_URL = "/api.exchangeratesapi.io/latest"
     
     //for picker view//
@@ -54,6 +53,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             //for "to" currency//
             let toIndex = currencyModel.currencies[row]
             toCurrencyDisplay.text = toIndex
+            
+            //to make request to api to fetch data//
+            ExchangeRateServices.instance.getExchangeRate(fromIndex: fromIndex, toIndex: toIndex)
         }
     }
 

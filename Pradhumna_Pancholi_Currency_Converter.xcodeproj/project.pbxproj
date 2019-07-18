@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9F0182E622E0FFCC000C4E5B /* ExchangeRateServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F0182E522E0FFCC000C4E5B /* ExchangeRateServices.swift */; };
 		9F79382222DFACF600090814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79382122DFACF600090814 /* AppDelegate.swift */; };
 		9F79382422DFACF600090814 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79382322DFACF600090814 /* ViewController.swift */; };
 		9F79382722DFACF600090814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F79382522DFACF600090814 /* Main.storyboard */; };
@@ -14,7 +15,7 @@
 		9F79382C22DFACF700090814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F79382A22DFACF700090814 /* LaunchScreen.storyboard */; };
 		9F79383722DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79383622DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterTests.swift */; };
 		9F79384222DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79384122DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterUITests.swift */; };
-		9F79385022DFB54300090814 /* CurrencyCoverversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79384F22DFB54300090814 /* CurrencyCoverversionModel.swift */; };
+		9F79385022DFB54300090814 /* ConversionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F79384F22DFB54300090814 /* ConversionModel.swift */; };
 		ADBB1A489E19C290CCE9FA20 /* Pods_Pradhumna_Pancholi_Currency_ConverterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87276BC461EFF1029FF65159 /* Pods_Pradhumna_Pancholi_Currency_ConverterTests.framework */; };
 		CCDE11E0B80B606FC711738B /* Pods_Pradhumna_Pancholi_Currency_Converter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6ADDAFFA781DCB6B04088749 /* Pods_Pradhumna_Pancholi_Currency_Converter.framework */; };
 		F5567E05FFA4D74D9E021FD5 /* Pods_Pradhumna_Pancholi_Currency_ConverterUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A1C158E459F1638521FF1F /* Pods_Pradhumna_Pancholi_Currency_ConverterUITests.framework */; };
@@ -43,6 +44,7 @@
 		7625623946B7590FCB82B5B9 /* Pods-Pradhumna_Pancholi_Currency_ConverterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pradhumna_Pancholi_Currency_ConverterTests.release.xcconfig"; path = "Target Support Files/Pods-Pradhumna_Pancholi_Currency_ConverterTests/Pods-Pradhumna_Pancholi_Currency_ConverterTests.release.xcconfig"; sourceTree = "<group>"; };
 		782C489B0C178690C790D398 /* Pods-Pradhumna_Pancholi_Currency_Converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pradhumna_Pancholi_Currency_Converter.debug.xcconfig"; path = "Target Support Files/Pods-Pradhumna_Pancholi_Currency_Converter/Pods-Pradhumna_Pancholi_Currency_Converter.debug.xcconfig"; sourceTree = "<group>"; };
 		87276BC461EFF1029FF65159 /* Pods_Pradhumna_Pancholi_Currency_ConverterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pradhumna_Pancholi_Currency_ConverterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0182E522E0FFCC000C4E5B /* ExchangeRateServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateServices.swift; sourceTree = "<group>"; };
 		9F79381E22DFACF600090814 /* Pradhumna_Pancholi_Currency_Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pradhumna_Pancholi_Currency_Converter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F79382122DFACF600090814 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F79382322DFACF600090814 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,7 +58,7 @@
 		9F79383D22DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Pradhumna_Pancholi_Currency_ConverterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F79384122DFACF800090814 /* Pradhumna_Pancholi_Currency_ConverterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pradhumna_Pancholi_Currency_ConverterUITests.swift; sourceTree = "<group>"; };
 		9F79384322DFACF800090814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9F79384F22DFB54300090814 /* CurrencyCoverversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyCoverversionModel.swift; sourceTree = "<group>"; };
+		9F79384F22DFB54300090814 /* ConversionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionModel.swift; sourceTree = "<group>"; };
 		A475B9C63FE6D4670C1DEEC8 /* Pods-Pradhumna_Pancholi_Currency_ConverterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pradhumna_Pancholi_Currency_ConverterTests.debug.xcconfig"; path = "Target Support Files/Pods-Pradhumna_Pancholi_Currency_ConverterTests/Pods-Pradhumna_Pancholi_Currency_ConverterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AFC7BE10F806EBF9CA5D58BF /* Pods-Pradhumna_Pancholi_Currency_ConverterUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pradhumna_Pancholi_Currency_ConverterUITests.release.xcconfig"; path = "Target Support Files/Pods-Pradhumna_Pancholi_Currency_ConverterUITests/Pods-Pradhumna_Pancholi_Currency_ConverterUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B376931DA37BB4E5CC54AF17 /* Pods-Pradhumna_Pancholi_Currency_ConverterUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pradhumna_Pancholi_Currency_ConverterUITests.debug.xcconfig"; path = "Target Support Files/Pods-Pradhumna_Pancholi_Currency_ConverterUITests/Pods-Pradhumna_Pancholi_Currency_ConverterUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -101,7 +103,6 @@
 				B376931DA37BB4E5CC54AF17 /* Pods-Pradhumna_Pancholi_Currency_ConverterUITests.debug.xcconfig */,
 				AFC7BE10F806EBF9CA5D58BF /* Pods-Pradhumna_Pancholi_Currency_ConverterUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -136,7 +137,8 @@
 				9F79382822DFACF700090814 /* Assets.xcassets */,
 				9F79382A22DFACF700090814 /* LaunchScreen.storyboard */,
 				9F79382D22DFACF700090814 /* Info.plist */,
-				9F79384F22DFB54300090814 /* CurrencyCoverversionModel.swift */,
+				9F79384F22DFB54300090814 /* ConversionModel.swift */,
+				9F0182E522E0FFCC000C4E5B /* ExchangeRateServices.swift */,
 			);
 			path = Pradhumna_Pancholi_Currency_Converter;
 			sourceTree = "<group>";
@@ -390,9 +392,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F0182E622E0FFCC000C4E5B /* ExchangeRateServices.swift in Sources */,
 				9F79382422DFACF600090814 /* ViewController.swift in Sources */,
 				9F79382222DFACF600090814 /* AppDelegate.swift in Sources */,
-				9F79385022DFB54300090814 /* CurrencyCoverversionModel.swift in Sources */,
+				9F79385022DFB54300090814 /* ConversionModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
