@@ -1,0 +1,6 @@
+framework module Pods_Pradhumna_Pancholi_Currency_ConverterUITests {
+  umbrella header "Pods-Pradhumna_Pancholi_Currency_ConverterUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
