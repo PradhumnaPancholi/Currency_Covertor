@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,16 +21,11 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="26"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="by Pradhumna Pancholi" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WmL-hf-kH3">
-                                <rect key="frame" x="93" y="814.5" width="228" height="27.5"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="WXN-Lc-ZN0">
                                 <rect key="frame" x="40" y="187" width="334" height="42"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uF7-6o-3Sp">
-                                        <rect key="frame" x="0.0" y="6" width="105.5" height="30"/>
+                                        <rect key="frame" x="0.0" y="4" width="105.5" height="34"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -44,7 +37,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gtp-Hf-c41">
-                                        <rect key="frame" x="228.5" y="6" width="105.5" height="30"/>
+                                        <rect key="frame" x="228.5" y="4" width="105.5" height="34"/>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
@@ -52,7 +45,7 @@
                                 </subviews>
                             </stackView>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNb-mJ-qha">
-                                <rect key="frame" x="47" y="514.5" width="320" height="250"/>
+                                <rect key="frame" x="47" y="515" width="320" height="250"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="250" id="LnN-Kk-rbk"/>
                                 </constraints>
@@ -67,22 +60,36 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hud-D8-9Ej">
+                                <rect key="frame" x="20" y="782" width="374" height="45"/>
+                                <color key="backgroundColor" red="1" green="0.75" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Wtr-rj-15h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="22"/>
+                                <state key="normal" title="Find conversion rate">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="findExchangeRatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cvP-jJ-Vwa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.95399693640000005" blue="0.12380687880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Hud-D8-9Ej" secondAttribute="bottom" constant="35" id="0Ph-wn-9d5"/>
                             <constraint firstItem="WXN-Lc-ZN0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="15a-Yx-5xa"/>
                             <constraint firstItem="FNb-mJ-qha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8nJ-CJ-K9b"/>
-                            <constraint firstAttribute="bottomMargin" secondItem="WmL-hf-kH3" secondAttribute="bottom" constant="20" id="AS3-0w-SLs"/>
                             <constraint firstItem="R3x-iJ-kdX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Dzp-s6-uyx"/>
                             <constraint firstItem="R3x-iJ-kdX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="EvG-AN-sp0"/>
                             <constraint firstItem="EAQ-LR-ezX" firstAttribute="top" secondItem="WXN-Lc-ZN0" secondAttribute="bottom" constant="20" id="FEQ-3j-V59"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WXN-Lc-ZN0" secondAttribute="trailing" constant="40" id="HnK-ne-npE"/>
-                            <constraint firstItem="WmL-hf-kH3" firstAttribute="top" secondItem="FNb-mJ-qha" secondAttribute="bottom" constant="50" id="Mr3-Nn-oMl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hud-D8-9Ej" secondAttribute="trailing" constant="20" id="Mhf-wy-HMm"/>
                             <constraint firstItem="EAQ-LR-ezX" firstAttribute="centerX" secondItem="uF7-6o-3Sp" secondAttribute="centerX" id="cRv-DS-RHM"/>
-                            <constraint firstItem="WmL-hf-kH3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dlQ-td-xrX"/>
+                            <constraint firstItem="Hud-D8-9Ej" firstAttribute="top" secondItem="FNb-mJ-qha" secondAttribute="bottom" constant="17" id="hHS-t5-XWt"/>
                             <constraint firstItem="mRU-b7-CNN" firstAttribute="top" secondItem="WXN-Lc-ZN0" secondAttribute="bottom" constant="20" id="nJd-81-5PJ"/>
+                            <constraint firstItem="Hud-D8-9Ej" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="osO-F4-yDo"/>
                             <constraint firstItem="WXN-Lc-ZN0" firstAttribute="top" secondItem="R3x-iJ-kdX" secondAttribute="bottom" constant="77" id="rhW-0H-Dpz"/>
-                            <constraint firstItem="WXN-Lc-ZN0" firstAttribute="centerX" secondItem="WmL-hf-kH3" secondAttribute="centerX" id="wjN-uv-rgE"/>
                             <constraint firstItem="mRU-b7-CNN" firstAttribute="centerX" secondItem="gtp-Hf-c41" secondAttribute="centerX" id="z1I-bP-nZw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -97,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="131.8840579710145" y="102.45535714285714"/>
+            <point key="canvasLocation" x="-155" y="97"/>
         </scene>
     </scenes>
 </document>

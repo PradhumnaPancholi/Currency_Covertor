@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
@@ -27,7 +28,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     var currencyModel = ConversionModel()
     var fromIndex = ""
     var toIndex = ""
-    var BASE_URL = "/api.exchangeratesapi.io/latest"
     
     //for picker view//
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
@@ -53,11 +53,26 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             //for "to" currency//
             let toIndex = currencyModel.currencies[row]
             toCurrencyDisplay.text = toIndex
-            
-            //to make request to api to fetch data//
-            ExchangeRateServices.instance.getExchangeRate(fromIndex: fromIndex, toIndex: toIndex)
         }
     }
 
+    @IBAction func findExchangeRatePressed(_ sender: UIButton) {
+        
+        //data required to make a request//
+        let BASE_URL = "https://api.exchangeratesapi.io/latest?"
+        let HEADER = [
+            "Content-Type": "Application/JSON; charset = UTF-8"
+        ]
+        
+        let ER_URL = "\(BASE_URL)base=\(fromIndex)&symbols=\(toIndex)"//URL for req//
+        Alamofire.request(ER_URL, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: HEADER).response { (response) in
+            if response.error == nil {
+                print(ER_URL as String)
+            }else{
+                debugPrint(response.error as Any)
+            }
+        }
+    }
 }
+
 
